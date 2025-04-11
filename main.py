@@ -11,9 +11,9 @@ def demo_conversion(xml_input: str) -> tuple[dict, str, str]:
     
     :param xml_input: XML string to convert to dictionary, JSON, and back to XML.
     :return: A tuple containing:
-        - parsed dictionary,
-        - JSON string,
-        - re-generated XML string.
+        - parsed dictionary
+        - JSON string
+        - re-generated XML string
     """
     
     logger = get_logger("XMLConverter")
