@@ -1,6 +1,4 @@
-import logging
 import json
-from logging import Logger
 from logger_singleton import get_logger
 from xml_utils import xml_to_dict, dict_to_xml
 
@@ -25,8 +23,6 @@ def demo_conversion(xml_input: str) -> tuple[dict, str, str]:
     xml_output = dict_to_xml(data_dict, logger)
     return data_dict, json_output, xml_output
 
-
-# Example usage
 if __name__ == "__main__":
     example_xml = """
     <note>
